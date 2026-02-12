@@ -70,7 +70,7 @@ elif 2 in value_counts.values():
 elif len(set(suits)) == 1:
     print("A Flush! Someone's feeling lucky!")
 elif check_straight(cards_drawn["cards"]):
-    print("Straight! Beautiful run!")
+    print("Straight! Lets go!")
 else:
     print("Sorry... No luck this time...")
 
