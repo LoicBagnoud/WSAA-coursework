@@ -3,6 +3,7 @@
 
 # Author: Loic Bagnoud
 
+# We import our packages
 import requests
 import json
 from collections import Counter
