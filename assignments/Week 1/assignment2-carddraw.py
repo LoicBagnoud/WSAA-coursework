@@ -1,4 +1,4 @@
-# The objecive of this program is shuffle a deck of cards and deal 5 cards to the user.
+# The objecive of this program is to shuffle a deck of cards and deal 5 cards to the user.
 # If the user gets a pair, triple, straight, or all of the same suit, they will get a personalised congratulatory statement.
 
 # Author: Loic Bagnoud
@@ -35,7 +35,7 @@ for card in cards_drawn["cards"]:
     values.append(card["value"])
     suits.append(card["suit"])
 
-# Thanks to the Counter module, we can count how many times each value appears
+# Thanks to the Counter module, we can count how many times each value appears in the values list.
 value_counts = Counter(values)
 
 # This function is necessary to see if the hand is a straight because it involves a sequence.
@@ -71,7 +71,7 @@ def check_straight(hand):
     return False
 
 # Then we check if specific values are inside our values.
-# If a value appears 3 times, we get a three of a kinda.
+# If a value appears 3 times, we get a three of a kind.
 if 3 in value_counts.values():
     print("Three of a kind! Nice draw!")
 
